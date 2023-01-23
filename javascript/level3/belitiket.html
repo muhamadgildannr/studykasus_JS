@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Beli Tiket</h2>
+    
+    
+     <button type="submit" onclick="beliTiket()" name="sumbit">Beli Tiket</button>
+
+     <script>
+        function beliTiket(){
+         
+            let cek = confirm("apakah anda yakin untuk meneruskan proses pembelian tiket?");
+            if(cek) {
+                let jumlah = prompt('total tiket yang akan di pesan');
+                
+                hasilAkhir = jumlah * 3500;
+
+                    if(jumlah == null){
+                        alert('batal memesan tiket')
+                    }else{
+                        alert('total harga yang harus di bayar adalah ' + hasilAkhir );
+                    }
+    
+      
+            }else{
+                alert('Proses pembelian tiket tidak dapat dilanjutkan')
+            }
+         }
+     </script>
+</body>
+</html>
